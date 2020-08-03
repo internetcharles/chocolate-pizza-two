@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import './style.css';
-import './article-styles.css';
+
 import Buttons from './Buttons'
 
 export default class DeliciousHeader extends Component {
