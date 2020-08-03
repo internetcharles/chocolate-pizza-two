@@ -6,7 +6,7 @@ export default class ArticleTitle extends Component {
     render() {
         return (
             <div>
-                <h1 className='article-title'>Chocolate Pizza</h1>
+                <h1 className='article-title'>{this.props.title}</h1>
                 <div className='post-date'>
                     Posted on 15 Dec 2013 / Desserts
                     <div className='print-page'>
