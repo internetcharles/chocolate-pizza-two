@@ -1,0 +1,86 @@
+/* typography */
+
+@font-face {
+    font-family: 'BenchNine Light';
+    src: url('./lab-assets/fonts/BenchNine-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BenchNine Bold';
+    src: url('./lab-assets/fonts/BenchNine-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Patrick Hand';
+    src: url('./lab-assets/fonts/PatrickHand-Regular.ttf') format('truetype');
+}
+
+section {
+    margin: 3em auto;
+}
+
+article {
+    font-size: 1.25em;
+}
+
+.byline, .post-date, .print-page {
+    font-family: 'BenchNine Light';
+}
+
+.article-title {
+    font-family: 'BenchNine Bold';
+}
+
+.ingredients-list li {
+    font-family: 'Patrick Hand';
+}
+
+/* other stuff */
+
+.article-title {
+    font-size: 3em;
+    margin: 0
+}
+
+.post-date {
+    font-size: 1.25em;
+    color: gray;
+    text-transform: uppercase;
+    margin-block-end: 1em;
+}
+
+article p {
+    text-indent: 2em;
+    margin: 2em auto;
+    color: gray;
+}
+
+.ingredients {
+    margin: auto;
+    max-width: 899px;
+    height: 305px;
+    background-image: url('./lab-assets/list-bg.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 17px 40px;
+}
+
+.ingredients-list {
+    columns: 2 200px;
+    column-gap: 4em;
+    list-style-type: '\2610';
+}
+
+.ingredients-list li {
+    line-height: 1.5em;
+    padding-inline-start: .5em;
+    color: darkred;
+}
+
+.checked {
+    list-style-type: '\2611';
+    text-decoration: line-through;
+}
