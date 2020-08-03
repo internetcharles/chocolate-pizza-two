@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import DeliciousHeader from './DeliciousHeader'
+import DeliciousHeader from './DeliciousHeader';
+import Article from './Article.js'
+
 
 function App() {
   return (
     <div className="App">
       <DeliciousHeader />
+      <Article />
     </div>
   );
 }
