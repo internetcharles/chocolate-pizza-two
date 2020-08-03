@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import './style.css'
-import './article-styles.css'
+
 
 export default class ArticleTitle extends Component {
     render() {
         return (
-            <div>
-                <h1 className='article-title'>Chocolate Pizza</h1>
+            <section>
+            <header>
+                <h1 className='article-title'>{this.props.title}</h1>
                 <div className='post-date'>
                     Posted on 15 Dec 2013 / Desserts
                     <div className='print-page'>
@@ -14,7 +14,8 @@ export default class ArticleTitle extends Component {
                         Print
                     </div>
                 </div>
-            </div>
+            </header>
+            </section>
         )
     }
 }
